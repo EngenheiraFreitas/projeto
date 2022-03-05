@@ -115,15 +115,19 @@ function draw() {
   blocks8.display();
   blocks9.display();
 
-  polygon.display();
+  //polygon.display();
 
   imageMode(CENTER);
 
   image(polygon_img,polygon.position.x,polygon.position.y,40,40);
 
+  }
+
   function mouseDragged(){
 
     Matter.Body.setPosition(this.polygon,{x: mouseX, y: mouseY});
+    
+  }
 
   function mouseReleased(){
 
@@ -131,6 +135,4 @@ function draw() {
 
   }
 
-  }
 
-}
